@@ -1,0 +1,33 @@
+2025-05-27 18:35:28,591 - INFO - Starting toxicity detection model training (Scikit-Learn)...
+2025-05-27 18:35:28,595 - INFO - ======================================================================
+2025-05-27 18:35:28,598 - INFO - ToxicityModelTrainer (Scikit-Learn) initialized
+2025-05-27 18:35:28,598 - INFO - Max features: 50000
+2025-05-27 18:35:28,599 - INFO - N-gram range: (1, 2)
+2025-05-27 18:35:28,599 - INFO - Loading data from train.csv
+2025-05-27 18:35:30,322 - INFO - Data loaded successfully. Shape: (159571, 8)
+2025-05-27 18:35:30,330 - INFO - Columns: ['id', 'comment_text', 'toxic', 'severe_toxic', 'obscene', 'threat', 'insult', 'identity_hate']
+2025-05-27 18:35:30,331 - INFO - Total comments: 159571
+2025-05-27 18:35:30,354 - INFO - Null values in comment_text: 0
+2025-05-27 18:35:30,355 - INFO - toxic: 15294 (9.58%)
+2025-05-27 18:35:30,355 - INFO - severe_toxic: 1595 (1.00%)
+2025-05-27 18:35:30,356 - INFO - obscene: 8449 (5.29%)
+2025-05-27 18:35:30,357 - INFO - threat: 478 (0.30%)
+2025-05-27 18:35:30,358 - INFO - insult: 7877 (4.94%)
+2025-05-27 18:35:30,359 - INFO - identity_hate: 1405 (0.88%)
+2025-05-27 18:35:30,359 - INFO - Preparing data for training...
+2025-05-27 18:35:30,417 - INFO - Data shape after removing nulls: (159571, 8)
+2025-05-27 18:35:30,417 - INFO - Sampling data for faster training...
+2025-05-27 18:35:30,469 - INFO - Sampled data shape: (100000, 8)
+2025-05-27 18:35:30,469 - INFO - Preprocessing text...
+2025-05-27 18:38:58,026 - INFO - Data shape after removing empty comments: (99947, 9)
+2025-05-27 18:38:59,465 - INFO - Training set size: 79957
+2025-05-27 18:38:59,465 - INFO - Test set size: 19990
+2025-05-27 18:38:59,473 - INFO - Creating TF-IDF vectorizer...
+2025-05-27 18:38:59,474 - INFO - Vectorizer configured with 50000 max features
+2025-05-27 18:38:59,474 - INFO - Building xgboost model...
+2025-05-27 18:38:59,474 - INFO - xgboost model built successfully
+2025-05-27 18:38:59,486 - INFO - Final training set: 63965
+2025-05-27 18:38:59,486 - INFO - Validation set: 15992
+2025-05-27 18:38:59,486 - INFO - Test set: 19990
+2025-05-27 18:38:59,488 - INFO - Starting model training...
+2025-05-27 18:38:59,488 - INFO - Vectorizing training data...
